@@ -1,0 +1,59 @@
+$bgColor: #f8f8f8;
+$text: #1b1c21;
+$bgHeader: #ffffff;
+$bullet: #bdbbbb;
+$bulletActive: #b5b6bc;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+button {
+    background-color: inherit;
+    cursor: pointer;
+    &:hover {
+        transition: all 0.5s linear;
+        transform: scale(1.01);
+    }
+}
+
+body {
+    font-family: TT Lakes, sans-serif;
+    background-color: $bgColor;
+    color: $text;
+    font-size: 1rem;
+    overflow-x: auto;
+    // position: relative;
+    // min-height: 100%;
+    @media (min-width: 120rem) {
+        overflow-x: hidden;
+    }
+}
+
+@import "../scss/fonts/fonts.scss";
+@import "../scss/aside/aside.scss";
+@import "../scss/modal/modal.scss";
+@import "../scss/overlay/overlay.scss";
+@import "../scss/wrapper/wrapper.scss";
+@import "../scss/header/header.scss";
+@import "../scss/main/content.scss";
+@import "../scss/main/repairs.scss";
+@import "../scss/main/brands.scss";
+@import "../scss/main/prices.scss";
+@import "../scss/footer/footer.scss";
+@import "../scss/swiper/swiper-style.scss";
+@import "../../node_modules/swiper/swiper-bundle.css";
